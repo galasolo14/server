@@ -38,3 +38,22 @@ INSERT INTO categories_tbl VALUES (2,'ירקות ופירות');
 INSERT INTO categories_tbl VALUES (3,'גבינות');
 INSERT INTO categories_tbl VALUES (4,'בשר ודגים');
 INSERT INTO categories_tbl VALUES (5,'מאפים');
+
+please insert save_orders_tbl with the below:
+USE [shopping]
+GO
+
+/****** Object:  Table [dbo].[save_orders_tbl]    Script Date: 03/08/2024 02:14:17 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[save_orders_tbl](
+	[order_id] [int] NULL,
+	[product] [varchar](50) NULL,
+	[category_id] [int] NULL,
+	[quantity] [int] NULL
+) ON [PRIMARY]
+GO
